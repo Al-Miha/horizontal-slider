@@ -17,6 +17,7 @@ h1 {
   padding: 20px;
   box-sizing: border-box;
   background-color: #eee;
+  background-color: #fff;
 }
 
 /*this is for chrome / firefox/ opera and safari*/
@@ -37,8 +38,28 @@ h1 {
 .item {
   display: inline-block;
   margin-right: 10px;
+  width: 300px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: all 0.4s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.075);
 }
 
+.item:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.06);
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
 /* .item img {
   width: 150px;
   height: 225px;
@@ -47,7 +68,13 @@ h1 {
 
 .item img {
   width: 300px;
-  height: 400 px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 9px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.card-text {
+  /* background-color: red; */
+  padding: 5px;
 }
